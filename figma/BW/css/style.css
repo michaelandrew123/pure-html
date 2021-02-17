@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+html{ 
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFC9FD;
+}
+header{
+    height: 10vh;
+    border-bottom:1px solid #FF9FFB;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+.bm-menu{
+    width: 90%;
+    margin: auto; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{ 
+    font-family: 'Caveat', cursive;
+    background: linear-gradient(#423044 ,#DB05C5); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: inline;
+    font-size: 48px;
+    font-weight: 400; 
+}
+nav ul.list-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul.list-items li{
+    margin-right:10px ;
+}
+nav ul.list-items li:last-child{
+    margin-right: 0px; 
+}
+li{
+    list-style: none; 
+}
+a{
+    text-decoration: none;    
+    color: 423044;
+    font-size: 18px;
+    font-weight: 300; 
+    font-family: 'Poppins', sans-serif;
+}
+section#home{ 
+    height: 100vh;
+}
+section#about{ 
+    height: 100vh;
+}
+section#contact{ 
+    height: 100vh;
+}
+.page{
+    height: 100%;
+    flex: auto
+} 
+.flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-col{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}  
+.items-start{
+    align-items: flex-start;
+}
+.items-end{
+    align-items: flex-end;
+}
+.items-center{
+    align-items: center;
+}
+.items-baseline{
+    align-items: baseline;
+}
+.items-stretch{
+    align-items: stretch;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+} 
+.flex-1{
+    flex: 1;
+}
+.flex-auto{
+    flex: auto;
+}
+.h-auto{
+    height: auto;
+}
+.h-100{
+    height: 100%;
+}
+.w-auto{
+    width: auto;
+}
+.w-100{
+    width: 100%;
+}
+#home{
+    width: 90%;
+    margin: auto;
+}

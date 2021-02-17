@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+h1,
+h2,
+h3, h4, h5, h6, p{
+    font-family: 'Poppins', sans-serif;  
+}
+html{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.overall-container{
+    color: white;
+    background-image: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+}
+header{ 
+    font-family: 'Poppins', sans-serif;   
+    /*background: radial-gradient(circle, rgb(112, 112, 51), rgb(177, 86, 196), rgb(24, 88, 24));*/
+    border-bottom: 1px solid rgb(81, 55, 85, 0.2);
+    box-shadow: 2px 2px 5px rgb(189, 187, 187);
+}
+header .header-container{
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    display: flex;  
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    font-family: 'Satisfy', cursive; 
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+.nav-links .nav-link{
+    list-style: none;
+    padding-left: 10px;
+}
+
+/* body{
+    background: #000;
+    filter: invert(1) hue-rotate(180deg);
+} */
+p::selection{
+    /* background: lightcoral;
+    color: white; */
+}
+.page{ 
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+.hero{
+    overflow: hidden;
+    height: 500px;
+    align-self: center;
+    justify-self: center;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.hero img{
+    height: 100%;
+    transition: transform 0.3s ease-out;
+  
+}
+
+.hero .model{
+    transform: rotate(0deg);
+    transform: rotate3d(0);  
+    cursor: pointer;
+    /* transform: perspective(0); */
+    /* transform: translateX(0); */
+}
+.hero:hover .model{
+    transform: rotate(20deg);
+    transform: rotate3d(0, 1, 0.5, 3.142rad); 
+    /* transform: perspective(6.5cm); */
+    /* transform: translateX(200px); */
+}
+
+
+.details{
+    grid-column: 2/3;
+    align-self: end;
+}
+
+
+.details h1{
+    font-size: 32px;
+    font-family: 'Poppins'; 
+    font-weight: 600;
+}
+.details h2{
+    font-size: 24px;
+    font-family: 'Poppins';
+    padding: 10px 0px; 
+    font-weight: 400;
+}
+.details p{
+    font-family: 'Poppins'; 
+    font-weight: 200;
+    font-size: 16px;
+    padding: 20px 0px;
+}
+.pages{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.lovely-joy,
+.burdags-jr{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+.pages > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pages h3{
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pages .slide{
+    color: rgb(255, 155, 247);
+    opacity: 0.5; 
+    transform: scale(1);
+}
+
+.pages .slide.active{
+    opacity: 1;
+}
+
+.pages .slide:hover{
+    animation: dot 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes dot{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+@media screen and (max-width: 1024px){
+    .page{  
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        align-items: center;    
+    }
+    .hero{
+        grid-column: 2/3;
+        height: auto;
+    }
+
+    .hero img{ 
+        height: 400px;
+    } 
+
+    .details{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        text-align: center;
+    }
+
+    .details h1{
+        font-size: 30px;
+        font-family: 'Poppins'; 
+        font-weight: 600;
+    }
+    .details h2{
+        font-size: 22px;
+        font-family: 'Poppins';
+        padding: 5px 0px; 
+        font-weight: 400;
+    }
+    .details p{
+        font-family: 'Poppins'; 
+        font-weight: 200;
+        font-size: 14px;
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .page{
+        grid-template-rows: 2fr 1fr; 
+    }
+    .hero{ 
+        align-self: end;
+    }
+    .hero img{
+        height: 300px;
+    }
+    
+    .details h1{
+        font-size: 28px; 
+    }
+    .details h2{
+        font-size: 20px; 
+    }
+    .details p{ 
+        font-size: 12px; 
+    }
+    main{
+        position: relative;
+    }
+    .pages{ 
+        position: absolute; 
+        top: 27px;
+        left: 0;
+        bottom: 0;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly; 
+    }
+
+
+}
