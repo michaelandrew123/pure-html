@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primay-gradient: linear-gradient(to bottom, #ffffff, #adadaa);
+    --label-gradient: linear-gradient(to bottom, #536452 0%, #57dd52 40%, #95e669 100%);
+}
+.container{
+    background: #282c34;
+    background: url('../assets/Night_3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 89vh;
+    width: 92vw;
+    margin: auto;
+    margin-top: 3rem;
+    /*
+        font-size: calc(10px + 2vmin); 
+        width: 92vh
+        height: 89vh
+    */ 
+    text-align: center;
+    color: white;
+}
+
+body{
+	font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 8vh; 
+} 
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+.nav-links .nav-link{
+    list-style: none;
+}
+
+.nav-links .nav-link a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+/*Style checkbox*/
+
+.lightswitch{
+    width: 40px;
+    height: 7px;
+    background: rgb(192, 188, 188);
+    margin: 20px auto;
+    border-radius: 100px;
+    position: relative;
+}
+
+.lightswitch label{
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: #0f0c29;
+    background: var(--label-gradient);
+    border-radius: 50px;
+    position: absolute;
+    top:-6px;
+    left: -1px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, alpha);
+    transition: all .5s ease;
+}
+
+.lightswitch input[type="checkbox"]{
+    position: absolute;
+    left: -8px;
+    top: -4px;
+    width: 50px;
+    opacity: 0;
+}
+
+
+.lightswitch input[type="checkbox"]:checked + label{
+    left: 25px;
+    background: tomato;
+}
+
+/* Shops */
+
+.imglayer{
+    position: absolute;
+    top: 50%;
+    left: 22%;
+}
+.imglayer img{
+    width: 59vw;
+}
+
+.container h4{
+    font-size: 11rem;
+    margin: 5rem;
+    padding: 0 1rem;
+    margin-top: 4rem;
+    background: var(--primay-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}

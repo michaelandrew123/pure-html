@@ -10,7 +10,8 @@
     <link href="./css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
+
+    <header >
         <div class="bm-menu">
             <div class="logo">BW</div>
             <nav>
@@ -22,35 +23,142 @@
             </nav>
         </div>
     </header>
+
     <main>
+
         <section id="home">
-            <div class="page page-1">
+            <div class="page page-1 home-page">
                 <div class="flex flex-row justify-center items-center h-100">
                     <div class="flex flex-col justify-center items-start flex-1 h-100">
-                        <div class="flex flex-col justify-center items-start">
+                        <div class="flex flex-col justify-center items-start bw">
                             <h1>Beautiful Woman</h1>
                             <p>Change your life and make it better</p>
-                            <button class="btn btn-primary">Get Started</button>
+                            <button class="btn btn-primary outline white-blue">Get Started</button>
                         </div> 
                     </div>
                     <div class="flex flex-col justify-center flex-1 h-100">
-                        <div class="container-grid">
-                            <img style="width: 20%;" src="./img/pexels-juliana-stein-1898555.jpg">
-                            <img style="width: 20%;" src="./img/pexels-juliana-stein-1898555.jpg">
-                            <img style="width: 20%;" src="./img/pexels-juliana-stein-1898555.jpg">
-                        </div>
+                         <div class="container-grid"> 
+                            <div class="box1 overflow-hidden">  
+                            </div> 
+                            <div class="box2 overflow-hidden" > 
+                            </div> 
+                            <div class="box3 overflow-hidden" >  
+                            </div>  
+                        </div> 
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
         <section id="about"> 
-            <div class="page page-2">
-                <di>About</di>
+            <div class="page page-2"> 
+                <div class="text-center h-100">
+                    <div class="what-we-are position-relative">
+                        <hr class="position-absolute absolute-center ">
+                        <span class="bg-white">What We Are</span> 
+                    </div>
+                    <h2>OUR PRODUCT</h2>
+                    <div class="text-center about-p-parent"> 
+                        <p class="about-p text-center ">
+                            Contemporary, rustic, elegant, or whimsical—whatever your artistic vision may be, we have 
+                            the medium to bring it to life. We carry only the finest natural stone and tile lines, each with a 
+                            character all its own.
+                        </p>
+                    </div>
+
+ 
+                    <div class="flex flex-col w-100"> 
+                        <div class="about-grid">
+                            <div class="about-image img-1 position-relative" style="background: #fff">
+                                <img src="./img/1.jpg" />
+                                <div class="captions position-absolute absolute-center">
+                                    <p>SELECT</p>
+                                </div>
+                            </div>
+                            <div class="about-image img-2 position-relative" style="background: #252">
+                                <img src="./img/2.jpg" />
+                                <div class="captions position-absolute absolute-center">
+                                    <p>SELECT</p>
+                                </div>
+                            </div>
+                            <div class="about-image img-3 position-relative" style="background: pink">
+                                <img src="./img/3.jpg" />
+                                <div class="captions position-absolute absolute-center">
+                                    <p>SELECT</p>
+                                </div>
+                            </div>
+                            <div class="about-image img-4 position-relative" style="background: red">
+                                <img src="./img/4.jpg" />
+                                <div class="captions position-absolute absolute-center">
+                                    <p>SELECT</p>
+                                </div>
+                            </div>
+                            <div class="about-image img-5 position-relative" style="background: green">
+                                <img src="./img/5.jpg" />
+                                <div class="captions position-absolute absolute-center">
+                                    <p>SELECT</p>
+                                </div>
+                            </div>
+                            <div class="about-image img-6 position-relative" style="background: orange">
+                                <img src="./img/6.jpg" />
+                                <div class="captions position-absolute absolute-center">
+                                    <p>SELECT</p>
+                                </div>
+                            </div>
+                            <div class="about-image img-7 position-relative" style="background: #fff">
+                                <img src="./img/7.jpg" />
+                                <div class="captions position-absolute absolute-center">
+                                    <p>SELECT</p>
+                                </div>
+                            </div>
+                            <div class="about-image img-8 position-relative" style="background: #fff">
+                                <img src="./img/8.jpg" />
+                                <div class="captions position-absolute absolute-center">
+                                    <p>SELECT</p>
+                                </div>
+                            </div>
+                           <!--  <img src="./img/1.jpg" />
+                            <img src="./img/2.jpg" />
+                            <img src="./img/3.jpg" />
+                            <img src="./img/4.jpg" />
+                            <img src="./img/5.jpg" />
+                            <img src="./img/6.jpg" />
+                            <img src="./img/7.jpg" />
+                            <img src="./img/8.jpg" />  -->
+                        </div> 
+                    </div>
+
+
+
+
+                </div>
+
             </div>
         </section>
         <section id="contact"> 
             <div class="page page-3">
-                <di>Contact</di>
+                <div class="flex flex-col justify-center items-center">  
+                    <div class="flex flex-col justify-center items-center"> 
+                        <h1>Contact Us</h1>
+                        <p class="about-p ">We are glad to come to our Site, we are greateful uf you will send us email to contact with us or give us feedback.</p>
+                    </div>
+                    <div> 
+                        <form class="form" method="post" action="#"> 
+                            <div class="form-group">
+                                <label for="full_name">Full Name</label>
+                                <input type="text" class="" id="full_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="" id="email">
+                            </div> 
+                            <textarea rows="10" cols="50">
+                            </textarea>
+                            <div class="form-group">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </form> 
+                    </div>
+                </div>
             </div>
         </section>
     </main>
