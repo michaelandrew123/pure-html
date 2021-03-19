@@ -1,0 +1,53 @@
+WEB SCRAPING
+
+
+
+install python 
+
+python.org
+check python if installed
+python --version
+
+install pip 
+https://bootstrap.pypa.io/get-pip.py
+create file name get-pip.py 
+
+
+
+install pip in cmd using python
+python get-pip.py
+
+
+
+check pip if installed
+pip --version
+
+
+
+install vertialenv 
+py -m pip install --user virtualenv
+
+py -m venv env 
+
+cd env
+env>Scripts\Activate
+
+
+install beautiful soup
+pip install beautifulsoup4
+
+install lxml
+pip install lxml
+
+$ git clone git://github.com/urllib3/urllib3.git
+
+cd urllib3
+$ python setup.py install
+
+
+python -m pip install urllib3
+jsbeautifier
+
+
+python main.py
+
